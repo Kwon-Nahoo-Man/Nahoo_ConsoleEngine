@@ -7,8 +7,8 @@
 #include "Math/Color.h"
 
 
-C_PLAYER::C_PLAYER()
-	:Nahoo::C_ACTOR('T', Nahoo::C_VECTOR2(5,5),Nahoo::E_COLOR::Green)
+C_PLAYER::C_PLAYER(const Nahoo::C_VECTOR2& position)
+	:Nahoo::C_ACTOR('T', position, Nahoo::E_COLOR::Green)
 {
 	m_sortingOrder = 10;
 }

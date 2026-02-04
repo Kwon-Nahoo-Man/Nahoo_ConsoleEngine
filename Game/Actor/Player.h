@@ -6,7 +6,7 @@ class C_PLAYER : public Nahoo::C_ACTOR
 	RTTI_DECLARATIONS(C_PLAYER, C_ACTOR)
 
 public:
-	C_PLAYER();
+	C_PLAYER(const Nahoo::C_VECTOR2& position);
 	~C_PLAYER();
 
 public:

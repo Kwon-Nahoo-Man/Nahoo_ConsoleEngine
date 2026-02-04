@@ -2,7 +2,7 @@
 #include <iostream>
 
 #include "Actor.h"
-#include "Core/Renderer.h"
+#include "Renderer/Renderer.h"
 
 
 Nahoo::C_ACTOR::C_ACTOR()

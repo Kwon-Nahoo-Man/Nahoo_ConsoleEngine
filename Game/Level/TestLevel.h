@@ -9,5 +9,5 @@ public:
 	C_TESTLEVEL();
 
 private:
-
+	void LoadMap(const char* filename);
 };

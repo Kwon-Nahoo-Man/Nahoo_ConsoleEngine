@@ -15,7 +15,7 @@ namespace Nahoo
 
 	public:
 		C_ENGINE();
-		~C_ENGINE();
+		virtual ~C_ENGINE();
 
 	public:
 		void QuitEngine();
@@ -24,14 +24,14 @@ namespace Nahoo
 
 		static C_ENGINE& GetInstance();
 
-	private:
+	protected:
 		void LoadEngineSetting();
 		void BeginPlay();
 		void Tick(float deltatime);
 		void Draw();
 		void ShutDown();
 	
-	private:
+	protected:
 		bool m_isQuit{ false };
 		S_ENGINESETTING m_engineSetting;
 		C_LEVEL* m_mainLevel{};

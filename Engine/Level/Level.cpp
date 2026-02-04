@@ -57,20 +57,14 @@ void Nahoo::C_LEVEL::Draw()
 
 			if (actor->GetPosition() == otherActor->GetPosition())
 			{
-				search = otherActor;
-				break;
+				if (actor->GetSortingOrder() < otherActor->GetSortingOrder())
+				{
+					search = otherActor;
+				}
 			}
-
-
 		}
 		
 		if (search == nullptr)
-		{
-			actor->Draw();
-			continue;
-		}
-
-		if (actor->GetSortingOrder() > search->GetSortingOrder())
 		{
 			actor->Draw();
 		}

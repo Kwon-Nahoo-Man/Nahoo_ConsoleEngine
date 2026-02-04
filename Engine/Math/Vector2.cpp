@@ -7,6 +7,7 @@ Nahoo::C_VECTOR2 Nahoo::C_VECTOR2::Up(0, 1);
 Nahoo::C_VECTOR2 Nahoo::C_VECTOR2::Right(1, 0);
 
 Nahoo::C_VECTOR2::C_VECTOR2()
+	:m_x(0), m_y(0)
 {
 
 }
@@ -14,7 +15,7 @@ Nahoo::C_VECTOR2::C_VECTOR2()
 Nahoo::C_VECTOR2::C_VECTOR2(int x, int y)
 	:m_x(x), m_y(y)
 {
-	
+
 }
 
 Nahoo::C_VECTOR2::~C_VECTOR2()
@@ -65,6 +66,6 @@ const char* Nahoo::C_VECTOR2::Tostring()
 
 	string = new char[128] {};
 	sprintf_s(string, 128, "(%d, %d)", m_x, m_y);
-	
+
 	return string;
 }
