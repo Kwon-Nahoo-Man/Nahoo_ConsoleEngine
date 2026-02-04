@@ -1,0 +1,1 @@
+targetFrameRate = 30
